@@ -22,17 +22,17 @@ class MainActivity : AppCompatActivity() {
             } else {
                 findViewById<CheckBox>(R.id.checkBox).isChecked =false}
 
-                if (password.any { it.isUpperCase() } && potwierdz.any { it.isUpperCase() }) {
+                if (password.any { it.isUpperCase() }) {
                     findViewById<CheckBox>(R.id.checkBox2).isChecked = password.any()
                 } else {
                     findViewById<CheckBox>(R.id.checkBox2).isChecked = false
                 }
-                if (password.any { it.isLowerCase() } && potwierdz.any { it.isLowerCase() }) {
+                if (password.any { it.isLowerCase() }) {
                     findViewById<CheckBox>(R.id.checkBox3).isChecked = password.any()
                 } else {
                     findViewById<CheckBox>(R.id.checkBox3).isChecked = false
                 }
-                if (password.any { it.isDigit() } && potwierdz.any { it.isDigit() }) {
+                if (password.any { it.isDigit() }) {
                     findViewById<CheckBox>(R.id.checkBox4).isChecked = password.any()
                 } else {
                     findViewById<CheckBox>(R.id.checkBox4).isChecked = false
